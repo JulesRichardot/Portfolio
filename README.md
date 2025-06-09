@@ -19,11 +19,11 @@ Ce projet est un portfolio personnel développé en HTML, CSS et TailwindCSS, av
 ## 📁 Structure du projet
 
 ```
-/public
-  /images        → Logos, photos, visuels
-  /js            → Scripts JS (ex: toggle navbar, animations)
+/docs
   index.html     → Page principale
   style.css      → Styles additionnels
+/img       → Logos, photos, visuels
+/others    → autres
 ```
 
 ## 📸 Aperçu
