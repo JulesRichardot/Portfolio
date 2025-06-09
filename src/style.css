@@ -1,0 +1,171 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: #222a35;
+    --background2-color: #575c66;
+    --border-color: rgb(133, 76, 230);
+    --degrade1-color: rgb(230, 0, 255);
+    --degrade2-color: rgb(132, 0, 255);
+    --text-color: rgba(242, 243, 244, 0.584);
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.neon-border {
+  border: 2px solid rgb(133, 76, 230);
+  box-shadow: 0 0 8px rgba(133, 76, 230, 0.3); /* effet néon léger */
+  border-radius: 8px; /* optionnel pour adoucir */
+}
+
+
+.neon-hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  background-color: #374151; /* bg-gray-700 */
+}
+
+.neon-hover:hover {
+  background-color: #2d2b46;
+  box-shadow:
+    0 0 4px rgb(133, 76, 230),
+    0 0 8px rgb(133, 76, 230),
+    0 0 12px rgb(133, 76, 230),
+    0 0 24px rgb(133, 76, 230);
+  transform: scale(1.05);
+}
+
+.btn-neon {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #854ce6;
+  color: #854ce6;
+  background-color: transparent;
+  box-shadow: 0 0 8px rgba(133, 76, 230, 0.7);
+  transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+  background-color: #6b21a8; /* hover: bg-purple-700 */
+  color: white;
+  box-shadow: none;
+  transform: scale(1.05);
+
+}
+
+.btn-cv {
+  transition: all 0.3s ease;
+
+}
+
+.btn-cv:hover {
+  transform: scale(1.05);
+}
+
+.comp {
+  width: 500px;
+  height: 297px;
+  border: 2px solid rgb(133, 76, 230);
+  box-shadow:
+    0 0 4px rgba(133, 76, 230, 0.4),
+    0 0 16px rgba(133, 76, 230, 0.3),
+    0 0 32px rgba(133, 76, 230, 0.2);
+  border-radius: 8px;
+}
+
+.carte {
+  border-color: rgba(242, 243, 244, 0.584);
+  border-width: 1px;
+}
+
+#menu {
+  position: absolute;
+  border: 2px solid #222a35;
+  background-color: rgba(31, 41, 55, 0.7); /* gris foncé avec 0.7 alpha */;
+}
+
+
+.blob-outer-container {
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  filter: blur(80px);
+  z-index: -10;
+}
+
+.blob-inner-container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: transparent;
+  transform: scale(0.6);
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  margin: auto;
+  background: conic-gradient(
+    from 0deg,
+    var(--degrade1-color),
+    #b300ff,            /* nuance plus claire */
+    var(--degrade2-color),
+    #854ce6,            /* couleur de bordure */
+    #4c0082,            /* violet foncé pour contraste */
+    var(--border-color),
+    #000,
+    var(--degrade1-color)
+  );
+  animation: spinBlob 8s linear infinite;
+  z-index: -10;
+}
+
+@keyframes spinBlob {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+
+    100% {
+        transform: rotate(1turn) scale(2);
+    }
+}
+
+@keyframes fadeSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animation de fermeture */
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  .fade-slide-down {
+    animation: fadeSlideDown 0.3s forwards;
+  }
+
+  .fade-slide-up {
+    animation: fadeSlideUp 0.3s forwards;
+  }

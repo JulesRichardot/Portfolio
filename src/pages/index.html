@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 relative">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-evenly relative">
+            <!-- Logo -->
+            <div class="text-2xl font-bold">MonPortfolio</div>
+
+
+            <!-- Fenêtre flottante qui s'affiche au clic -->
+            <div id="menu" class="hidden absolute space-y-3 top-full right-0 mt-2 w-48 bg-gray-900 rounded shadow-lg flex items-center p-4 z-10 flex-col">
+            <a href="#home" class="hover:text-purple-400 transition-colors duration-300">Accueil</a>
+            <a href="#skills" class="hover:text-purple-400 transition-colors duration-300">Compétences</a>
+            <a href="#projects" class="hover:text-purple-400 transition-colors duration-300">Projets</a>
+            <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
+            <a href="https://github.com/tonpseudo" target="_blank"
+                class="btn-neon px-4 py-2 rounded hover:bg-purple-700 transition text-center">
+                GitHub
+            </a>
+            </div>
+
+            <!-- Menu classique visible sur md et + -->
+            <div class="hidden md:flex md:items-center md:space-x-6">
+                <a href="#home" class="hover:text-purple-400 transition-colors duration-300">Accueil</a>
+                <a href="#skills" class="hover:text-purple-400 transition-colors duration-300">Compétences</a>
+                <a href="#projects" class="hover:text-purple-400 transition-colors duration-300">Projets</a>
+                <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-6">
+                <a href="https://github.com/tonpseudo" target="_blank"
+                    class="btn-neon px-4 py-2 rounded hover:bg-purple-700 transition">
+                    Mon GitHub
+                </a>
+            </div>
+
+            <!-- Bouton mobile -->
+            <button id="menu-toggle" class="group md:hidden flex flex-col items-center justify-center w-10 h-10 relative z-20 ml-auto">
+            <span class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 group-hover:rotate-6 group-hover:translate-x-1"></span>
+            <span class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 group-hover:translate-x-2"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:-rotate-6 group-hover:translate-x-1"></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 z-10">
+        <!-- Section à Propos -->
+        <section id="about" class=" mt-20 z-100 mb-20 p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <div>
+                <h1 class="text-5xl font-bold mb-4">Bonjour, je suis Jules Richardot</h1>
+            </br>
+                <p class="mb-4 text text-xl">Étudiant en BUT Informatique, j'ai découvert l'informatique très jeune grâce à mon père. Etant donné ma passion pour ce domaine, j'ai décidé de m'y orienter dès le lycée.
+                </br>
+                </br>
+                Désireux d'apprendre, j'ai choisi le BUT pour son côté plus pratique que théorique. J'ai ainsi confirmé mon choix d'orientation dès la première année puisque cette formation correspondait parfaitement à mes attentes.
+                </br>
+                </br>
+                J'ai acquérit ainsi des bonnes pratiques en développement (Qualité du code, tests unitaires, annotations...) mais aussi en communication et gestion de projet (outils tels que figma, SWOT, user story etc...). J'ai par ailleurs atteint la finale du concours d'éloquence de L'IUT.    
+                </br>
+                </br>
+                Je souhaite poursuivre en école d’ingénieurs, notamment à l’UTC Compiègne en alternance, pour continuer à progresser techniquement et professionnellement.</p>
+                </br>
+                </br>
+                <a href="../../others/CV stage BUT2(LinkedIn).pdf" class="btn-cv bg-purple-600 px-4 py-2 rounded hover:bg-purple-700 transition-colors duration-300">Télécharger mon CV</a>
+            </div>
+
+            <div class="relative w-fit mx-auto md:justify-center">
+                <div class="blob-outer-container absolute inset-0">
+                    <div class="blob-inner-container">
+                        <div class="blob"></div>
+                    </div>
+                </div>
+                <img src="../../img/1749499346096.jpg" id="pp" alt="pp"
+                    class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover relative z-10" />
+                </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="p-8 mb-20">
+            <h2 class="text-4xl font-bold mb-8 text-center">Compétences</h2>
+            <p class="text text-center mb-8 text-2xl">Voici un aperçu des compétences que j'ai travaillée  !</p>
+            
+            <div class="flex flex-wrap justify-center gap-8">
+
+                <!-- Boîte 1 -->
+                <div class=" comp rounded-lg p-4 flex flex-col items-center space-y-4">
+                    <h3 class="text-3xl font-bold text-center text mb-3">Frontend</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-3">
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/html.png" alt="React" class="w-5 h-5">
+                            <span class="text">HTML</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/css.png" alt="CSS" class="w-5 h-5">
+                            <span class="text">CSS</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/js.png" alt="JS" class="w-5 h-5">
+                            <span class="text">JavaScript</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/bootstrap.png" alt="Bootstrap" class="w-5 h-5">
+                            <span class="text">Bootstrap</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/tailwind.png" alt="tailwind" class="w-5 h-5">
+                            <span class="text">Tailwind</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/chart.png" alt="Chart" class="w-5 h-5">
+                            <span class="text">Chart.js</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/plotly.png" alt="Plotly" class="w-5 h-5">
+                            <span class="text">Plotly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boîte 2 -->
+                <div class=" comp rounded-lg p-4 flex flex-col items-center space-y-4">
+                    <h3 class="text-3xl font-bold text-center text mb-3">Backend</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-3">
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/java.png" alt="React" class="w-5 h-5">
+                            <span class="text">Java</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/php.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">PHP</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/phpmyadmin.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">Phpmyadmin</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/python.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">Python</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/mariadb.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">MariaDB</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/postgresql.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Boîte 3 centrée -->
+                <div class=" comp rounded-lg p-4 flex flex-col items-center space-y-4">
+                    <h3 class="text-3xl font-bold text-center text mb-3">Autres</h3>
+                    <div class=" flex flex-wrap justify-center items-center gap-3">
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/github.png" alt="React" class="w-5 h-5">
+                            <span class="text">Github</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/vscode.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">Vscode</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/canva.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">Canva</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/chatgpt.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">ChatGPT</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <img src="../../img/virtualbox.png" alt="HTML" class="w-5 h-5">
+                            <span class="text">VirtualBox</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="mb-20 p-8">
+            <h2 class="text-4xl font-bold mb-8 text-center">Projets</h2>
+            <p class="text text-center mb-8 text-2xl">Voici une séléction de quelques projets réalisé pendant ma formation...</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Calculatrice en Java</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Installation de services réseau</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Organisation d'un travail d'équipe</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Recueil de besoin</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Développement d'une application Partie 1</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded neon-hover">
+                <h3 class="text-lg font-semibold mb-2 text-center">Développemnt d'une applicaton Partie 2</h3>
+                <p class="mb-2">Description du projet.</p>
+                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            </div>
+            <!-- Ajoute d'autres projets ici -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-400 py-6 mt-20">
+            <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm">&copy; 2025 Jules Richardot. Tous droits réservés.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#skills" class="hover:text-white transition duration-300">Compétences</a>
+                    <a href="#projects" class="hover:text-white transition duration-300">Projets</a>
+                    <a href="https://www.linkedin.com/in/jules-richardot-147957298/" class="hover:text-white transition duration-300">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        if (menu.classList.contains('hidden')) {
+        // Afficher menu avec animation fade-slide-down
+        menu.classList.remove('hidden', 'fade-slide-up');
+        menu.classList.add('fade-slide-down');
+        menu.style.pointerEvents = 'auto';
+        menu.style.opacity = '1';
+        } else {
+        // Cacher menu avec animation fade-slide-up
+        menu.classList.remove('fade-slide-down');
+        menu.classList.add('fade-slide-up');
+        menu.style.pointerEvents = 'none';
+
+        // Après fin animation (300ms), cacher le menu complètement
+        setTimeout(() => {
+            menu.classList.add('hidden');
+            menu.style.opacity = '0';
+        }, 300);
+        }
+    });
+    </script>
+</body>
+</html>
+
