@@ -90,10 +90,10 @@ html {
 
 .blob-outer-container {
   position: absolute;
-  top: -150%;
-  left: -150%;
-  width: 400%;
-  height: 400%;
+  top: -150% !important;
+  left: -150% !important;
+  width: 400% !important;
+  height: 400% !important;
   filter: blur(80px);
   z-index: -10;
 }
