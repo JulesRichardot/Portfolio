@@ -199,42 +199,205 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Calculatrice en Java</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+                <p class="mb-2 text-center">Projet Java en binôme avec opérations simples & expressions, UML et Git.</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-calculatrice'); return false;">Plus en détail</a>
+                </p>
             </div>
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Installation de services réseau</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+                <p class="mb-2 text-center">Déploiement d’un environnement LAMP (Linux, Apache, MariaDB, PHP).</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-lamp'); return false;">Voir le projet</a>
+                </p>
             </div>
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Organisation d'un travail d'équipe</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+                <p class="mb-2 text-center">Projet d’évènement culturel et création de site web.</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-team'); return false;">Voir le projet</a>
+                </p>
             </div>
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Recueil de besoin</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+                <p class="mb-2 text-center">Analyse, persona et prototypage d’un site web.</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-recueil'); return false;">Voir le projet</a>
+                </p>
             </div>
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
-                <h3 class="text-lg font-semibold mb-2 text-center">Développement d'une application Partie 1</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
+                <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 1</h3>
+                <p class="mb-2 text-center">Création d’une application de gestion de jeux de société.</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-app'); return false;">Voir le projet</a>
+                </p>
             </div>
 
-            <div class="bg-gray-800 p-4 rounded neon-hover">
-                <h3 class="text-lg font-semibold mb-2 text-center">Développemnt d'une applicaton Partie 2</h3>
-                <p class="mb-2">Description du projet.</p>
-                <a href="#" class="text-purple-400 hover:underline">Voir le projet</a>
+            <div class="bg-gray-800 p-4 rounded neon-hover relative">
+                <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 2</h3>
+                <p class="mb-2 text-center">Optimisation, ajout de fonctionnalités et modification du design de la v1.</p>
+                <p class="text-purple-400 hover:underline text-center">
+                    <a href="#" onclick="openModal('modal-app2'); return false;">Voir le projet</a>
+                </p>
             </div>
             <!-- Ajoute d'autres projets ici -->
+            </div>
+            <!-- Carte pour projet onClick -->
+
+             <!-- Modale Calculatrice -->
+            <div id="modal-calculatrice" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-xl w-full relative text-white shadow-xl">
+                    <button onclick="closeModal('modal-calculatrice')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Calculatrice en Java</h3>
+                    <p class="mb-4">
+                    Projet en binôme réalisé en Java, visant à développer une calculatrice capable d’effectuer des opérations simples sur des entiers.
+                    <br><br>
+                    Le projet a été découpé en deux phases : une première pour la version basique avec UML, et une seconde avec la gestion d'expressions plus complexes grâce à une classe dédiée.
+                    </p>
+                    <a href="https://github.com/Lasryy/Calculatrice_Java" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 transition px-4 py-2 rounded text-white font-semibold">
+                    Voir le projet sur GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Modale Installation LAMP -->
+            <div id="modal-lamp" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+                    <button onclick="closeModal('modal-lamp')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Installation de services réseau</h3>
+                    <p class="mb-4 text-sm leading-relaxed">
+                    Au cours de ce projet, j'ai mis en place un environnement LAMP (Linux, Apache, MariaDB, PHP) pour comprendre la gestion et la configuration d’un serveur web.<br><br>
+
+                    <strong class="text-purple-400">Installation et Configuration :</strong><br>
+                    J’ai installé Apache pour servir des pages web, MariaDB pour la gestion de bases de données, et PHP pour l'exécution de scripts côté serveur. J’ai appris à configurer Apache pour qu’il puisse correctement intégrer PHP et MariaDB.<br><br>
+
+                    <strong class="text-purple-400">Autonomie et Pratique :</strong><br>
+                    Le travail en autonomie m’a permis de développer des compétences pratiques sur la résolution de problèmes techniques liés aux installations, configurations et commandes systèmes.<br><br>
+
+                    <strong class="text-purple-400">Sécurité et Maintenance :</strong><br>
+                    J’ai abordé les bonnes pratiques de sécurité pour les serveurs, notamment la configuration sécurisée de phpMyAdmin et la gestion des mises à jour pour maintenir la stabilité de l’environnement LAMP.
+                    </p>
+                </div>
+            </div>
+            <!-- Modale Projet Teamwork -->
+            <div id="modal-team" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+                    <button onclick="closeModal('modal-team')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Organisation d'un travail d'équipe</h3>
+                    <p class="mb-4 text-sm leading-relaxed">
+                    Ce projet avait pour objectif de nous faire travailler en équipe sur un événement culturel réel. Nous avons choisi le concours d'élégance automobile d'Enghien, auquel nous avons assisté pour recueillir des données terrain : interviews des organisateurs, sondages auprès des visiteurs, photos, etc. </br> Il s'agit de notre premier site réalisé au cours de la première année de BUT.<br><br>
+
+                    <strong class="text-purple-400">Objectif :</strong><br>
+                    Imaginer et organiser une future édition de l’évènement : création du programme, des supports de communication, et d’un site web dédié.<br><br>
+
+                    <strong class="text-purple-400">Compétences mobilisées :</strong><br>
+                    • Gestion de projet (diagramme de Gantt, matrice RACI)<br>
+                    • Développement web (HTML, CSS, JavaScript)<br>
+                    • Création graphique (affiches, visuels)<br><br>
+
+                    <strong class="text-purple-400">Site final :</strong><br>
+                    <a href="https://lasryy.github.io/SAE-Evenement/english_page/index_E.html" target="_blank" class="inline-block mt-4 px-4 py-2 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-gray-900 transition rounded">
+                        Accéder au site en ligne
+                    </a>
+                    </p>
+                </div>
+            </div>
+            <!-- Modale Projet Recueil de besoin -->
+            <div id="modal-recueil" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+                    <button onclick="closeModal('modal-recueil')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Recueil de besoin</h3>
+                    <div class="text-sm leading-relaxed space-y-4">
+                    <p><strong class="text-purple-400">Projet individuel</strong> comprenant recueil d'informations, analyse des besoins et création de prototype.</p>
+
+                    <p><strong class="text-purple-400">Phase I : Analyse et Construction d’Expertise</strong><br>
+                    • Récupération des besoins dans un tableau<br>
+                    • Préparation de 3 questions pour affiner les attentes client<br>
+                    • Étude de benchmarking avec proposition d'amélioration<br>
+                    • Rédaction d'une note d'intention<br>
+                    • Identification des intervenants et tri des contenus en 3 catégories<br>
+                    • Création de 2 personas</p>
+
+                    <p><strong class="text-purple-400">Phase II : Dialogue et Prototypage</strong><br>
+                    • Entretien client/concepteur simulé avec feedbacks<br>
+                    • Évaluation des échanges, documentation des interactions<br>
+                    • Frise chronologique et synthèse<br>
+                    • Proposition visuelle + captures intermédiaires<br>
+                    • Diagramme de navigation des actions utilisateurs</p>
+
+                    <p><strong class="text-purple-400">Phase III : Prototype final</strong><br>
+                    • Présentation d’un prototype interactif<br>
+                    • Justification du choix des pages et de la navigation<br>
+                    • Développement sur outil collaboratif ou export ZIP</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modale Projet Développement d'une application -->
+            <div id="modal-app" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+                    <button onclick="closeModal('modal-app')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Développement d'une application</h3>
+
+                    <div class="text-sm leading-relaxed space-y-4">
+                    <p><strong class="text-purple-400">Contexte :</strong><br>
+                    L’Université Sorbonne Paris Nord possède une collection de plus de 17 000 jeux de société. Ce projet avait pour but de concevoir une application web pour gérer et valoriser cette collection.</p>
+
+                    <p><strong class="text-purple-400">Fonctionnalités principales :</strong><br>
+                    • Nettoyage automatisé des données à l’aide de scripts Python<br>
+                    • Création et gestion d’une base de données relationnelle MySQL<br>
+                    • Interface web MVC avec recherche, prêt de jeux et gestion d’inventaire<br>
+                    • Intégration de scripts PHP et HTML pour une application dynamique</p>
+
+                    <p><strong class="text-purple-400">Technologies utilisées :</strong><br>
+                    Python • PHP • SQL • HTML • CSS • JS • MySQL</p>
+
+                    <p><strong class="text-purple-400">Équipe projet :</strong><br>
+                    Mehdi Arrab, Lasry Beskiwin, Rania Bousfiha, Safiya Nguyen, Ahash Parthipan, Jules Richardot</p>
+
+                    <p>
+                    <a href="https://github.com/Lasryy/Calculatrice_Java" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 transition px-4 py-2 rounded text-white font-semibold">
+                    Voir le projet sur GitHub
+                    </a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modale Projet Développement d'une application Partie 2-->
+            <div id="modal-app2" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+                    <button onclick="closeModal('modal-app2')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
+                    <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Développement d'une application Partie 2</h3>
+
+                    <div class="text-sm leading-relaxed space-y-4">
+                    <p><strong class="text-purple-400">Contexte :</strong><br>
+                   Après une première phase consacrée à la conception de l’application web, à la mise en place d’une base de données relationnelle MySQL et au développement des fonctionnalités de base, cette deuxième phase vise à finaliser et enrichir les fonctionnalités principales pour offrir une expérience utilisateur complète et fluide.</p>
+
+                    <p><strong class="text-purple-400">Objectifs de cette deuxième phase :</strong><br>
+                    • Mise en place complète des opérations d’ajout, de suppression et de modification des jeux ainsi que des utilisateurs, afin de garantir une gestion précise et dynamique de la collection<br>
+                    • Suivi rigoureux des prêts des jeux de société, incluant la localisation physique des exemplaires pour faciliter leur suivi et retour.<br>
+                    • Implémentation d’un système d’historique pour tracer toutes les modifications effectuées sur les jeux et les utilisateurs, assurant ainsi la transparence et la traçabilité des actions.<br>
+                    • Ajout d’une fonctionnalité permettant d’exporter facilement les données, pour une utilisation externe, des analyses ou des rapports.<br>
+                    • Optimisation de l’interface utilisateur avec un design plus moderne, intégration d’images, amélioration de la fluidité et de la réactivité de l’application pour offrir une expérience utilisateur agréable et intuitive.
+                    </p>
+
+                    <p><strong class="text-purple-400">Technologies utilisées :</strong><br>
+                    Python • PHP • SQL • HTML • CSS • JS • MySQL</p>
+
+                    <p><strong class="text-purple-400">Équipe projet :</strong><br>
+                    Lasry Beskiwin, Rania Bousfiha, Safiya Nguyen, Ahash Parthipan, Jules Richardot</p>
+
+                    <p>
+                    <a href="" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 transition px-4 py-2 rounded text-white font-semibold">
+                    Projet en cours de développement !!
+                    </a>
+                    </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -275,6 +438,14 @@
         }, 300);
         }
     });
+
+      function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
     </script>
 </body>
 </html>
