@@ -197,7 +197,7 @@
         <!-- Section Projets -->
         <section id="projects" class="mb-20 p-8">
             <h2 class="text-4xl font-bold mb-8 text-center">Projets</h2>
-            <p class="text text-center mb-8 text-2xl">Voici une séléction de quelques projets réalisés pendant ma formation...</p>
+            <p class="text text-center mb-8 text-2xl">Voici une séléction de quelques projets réalisé pendant ma formation...</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
@@ -205,7 +205,7 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Calculatrice en Java</h3>
                 <p class="mb-2 text-center">Projet Java en binôme avec opérations simples & expressions, UML et Git.</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-calculatrice'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-calculatrice'); return false;">Plus en détail</a>
                 </p>
             </div>
 
@@ -213,7 +213,7 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Installation de services réseau</h3>
                 <p class="mb-2 text-center">Déploiement d’un environnement LAMP (Linux, Apache, MariaDB, PHP).</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-lamp'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-lamp'); return false;">Voir le projet</a>
                 </p>
             </div>
 
@@ -221,7 +221,7 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Organisation d'un travail d'équipe</h3>
                 <p class="mb-2 text-center">Projet d’évènement culturel et création de site web.</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-team'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-team'); return false;">Voir le projet</a>
                 </p>
             </div>
 
@@ -229,7 +229,7 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Recueil de besoin</h3>
                 <p class="mb-2 text-center">Analyse, persona et prototypage d’un site web.</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-recueil'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-recueil'); return false;">Voir le projet</a>
                 </p>
             </div>
 
@@ -237,7 +237,7 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 1</h3>
                 <p class="mb-2 text-center">Création d’une application de gestion de jeux de société.</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-app'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-app'); return false;">Voir le projet</a>
                 </p>
             </div>
 
@@ -245,15 +245,16 @@
                 <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 2</h3>
                 <p class="mb-2 text-center">Optimisation, ajout de fonctionnalités et modification du design de la v1.</p>
                 <p class="text-purple-400 hover:underline text-center">
-                    <a href="#" onclick="openModal('modal-app2'); return false;"> >Plus de détails</a>
+                    <a href="#" onclick="openModal('modal-app2'); return false;">Voir le projet</a>
                 </p>
             </div>
+            <!-- Ajoute d'autres projets ici -->
             </div>
             <!-- Carte pour projet onClick -->
 
              <!-- Modale Calculatrice -->
-            <div id="modal-calculatrice" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-xl w-full relative text-white shadow-xl">
+            <div id="modal-calculatrice" class="modal fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-xl w-full relative text-white shadow-xl">
                     <button onclick="closeModal('modal-calculatrice')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Calculatrice en Java</h3>
                     <p class="mb-4">
@@ -267,8 +268,8 @@
                 </div>
             </div>
             <!-- Modale Installation LAMP -->
-            <div id="modal-lamp" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+            <div id="modal-lamp" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
                     <button onclick="closeModal('modal-lamp')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Installation de services réseau</h3>
                     <p class="mb-4 text-sm leading-relaxed">
@@ -286,8 +287,8 @@
                 </div>
             </div>
             <!-- Modale Projet Teamwork -->
-            <div id="modal-team" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+            <div id="modal-team" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
                     <button onclick="closeModal('modal-team')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Organisation d'un travail d'équipe</h3>
                     <p class="mb-4 text-sm leading-relaxed">
@@ -309,8 +310,8 @@
                 </div>
             </div>
             <!-- Modale Projet Recueil de besoin -->
-            <div id="modal-recueil" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+            <div id="modal-recueil" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-2xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
                     <button onclick="closeModal('modal-recueil')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Recueil de besoin</h3>
                     <div class="text-sm leading-relaxed space-y-4">
@@ -339,8 +340,8 @@
                 </div>
             </div>
             <!-- Modale Projet Développement d'une application -->
-            <div id="modal-app" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+            <div id="modal-app" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
                     <button onclick="closeModal('modal-app')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Développement d'une application</h3>
 
@@ -369,8 +370,8 @@
                 </div>
             </div>
             <!-- Modale Projet Développement d'une application Partie 2-->
-            <div id="modal-app2" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
-                <div class="bg-gray-900 border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
+            <div id="modal-app2" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+                <div class=" border-2 border-purple-500 rounded-lg p-8 max-w-3xl w-full relative text-white shadow-xl overflow-y-auto max-h-[90vh]">
                     <button onclick="closeModal('modal-app2')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Développement d'une application Partie 2</h3>
 
@@ -450,4 +451,6 @@
     </script>
 </body>
 </html>
+
+
 
