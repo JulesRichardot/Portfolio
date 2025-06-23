@@ -11,6 +11,30 @@
 
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-gray-900 flex items-center justify-center z-50 transition-opacity duration-500">
+        <div class="text-center">
+            <!-- Titre et nom avec animation de frappe -->
+            <h1 class="text-4xl md:text-6xl font-bold mb-12 overflow-hidden">
+                <span class="inline-block text-purple-400 animate-slide-in">MonPortfolio</span>
+                <span class="inline-block text-purple-500 mx-4 animate-fade-in" style="animation-delay: 0.5s;">|</span>
+                <span class="inline-block text-purple-300 animate-slide-in" style="animation-delay: 1s;">Jules Richardot</span>
+            </h1>
+            
+            <!-- Barre de progression stylée -->
+            <div class="w-64 h-1 bg-gray-700 rounded-full mx-auto mb-8 overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-purple-500 to-purple-600 rounded-full animate-progress-bar"></div>
+            </div>
+            
+            <!-- Points animés -->
+            <div class="flex justify-center space-x-2">
+                <div class="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+                <div class="w-3 h-3 bg-purple-500 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+                <div class="w-3 h-3 bg-purple-500 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="bg-gray-800 text-white p-4 relative">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-evenly relative">
@@ -23,6 +47,7 @@
             <a href="#home" class="hover:text-purple-400 transition-colors duration-300">Accueil</a>
             <a href="#skills" class="hover:text-purple-400 transition-colors duration-300">Compétences</a>
             <a href="#projects" class="hover:text-purple-400 transition-colors duration-300">Projets</a>
+            <a href="#experiences" class="hover:text-purple-400 transition-colors duration-300">Expériences</a>
             <a href="https://github.com/JulesRichardot" target="_blank"
                 class="btn-neon px-4 py-2 rounded hover:bg-purple-700 transition text-center">
                 GitHub
@@ -34,12 +59,16 @@
                 <a href="#home" class="hover:text-purple-400 transition-colors duration-300">Accueil</a>
                 <a href="#skills" class="hover:text-purple-400 transition-colors duration-300">Compétences</a>
                 <a href="#projects" class="hover:text-purple-400 transition-colors duration-300">Projets</a>
-                <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
+                <a href="#experiences" class="hover:text-purple-400 transition-colors duration-300">Expériences</a>
             </div>
             <div class="hidden md:flex md:items-center md:space-x-6">
                 <a href="https://github.com/JulesRichardot" target="_blank"
                     class="btn-neon px-4 py-2 rounded hover:bg-purple-700 transition">
                     Mon GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/jules-richardot-147957298/" target="_blank"
+                    class="btn-neon px-4 py-2 rounded hover:bg-purple-700 transition">
+                    LinkedIn
                 </a>
             </div>
 
@@ -55,7 +84,7 @@
 
     <div class="max-w-7xl mx-auto px-6 z-10">
         <!-- Section à Propos -->
-        <section id="about" class=" mt-20 z-100 mb-20 p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <section id="home" class=" mt-20 z-100 mb-20 p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             
             <div>
                 <h1 class="text-5xl font-bold mb-4">Bonjour, je suis Jules Richardot</h1>
@@ -69,7 +98,7 @@
                 J'ai acquis ainsi des bonnes pratiques en développement (Qualité du code, tests unitaires, annotations...) mais aussi en communication et gestion de projet (outils tels que figma, SWOT, user story etc...). J'ai par ailleurs atteint la finale du concours d'éloquence de L'IUT.    
                 </br>
                 </br>
-                Je souhaite poursuivre en école d’ingénieur pour continuer à progresser techniquement et professionnellement.</p>
+                Je souhaite poursuivre en école d'ingénieur pour continuer à progresser techniquement et professionnellement.</p>
                 </br>
                 </br>
                 <a href="https://github.com/JulesRichardot/Portfolio/blob/main/others/CV%20stage%20BUT2(LinkedIn).pdf" 
@@ -190,6 +219,33 @@
                     </div>
                 </div>
 
+                <!-- Boîte 4 - Soft Skills -->
+                <div class=" comp rounded-lg p-4 flex flex-col items-center space-y-4">
+                    <h3 class="text-3xl font-bold text-center text mb-3">Soft Skills</h3>
+                    <div class=" flex flex-wrap justify-center items-center gap-3">
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <span class="text-2xl">🤝</span>
+                            <span class="text">Travail d'équipe</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <span class="text-2xl">💬</span>
+                            <span class="text">Communication</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <span class="text-2xl">🎯</span>
+                            <span class="text">Gestion de projet</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text">Adaptabilité</span>
+                        </div>
+                        <div class=" carte flex items-center gap-2 px-4 py-2 rounded-lg shadow-md">
+                            <span class="text-2xl">🔍</span>
+                            <span class="text">Curiosité</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -210,7 +266,7 @@
 
             <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Installation de services réseau</h3>
-                <p class="mb-2 text-center">Déploiement d’un environnement LAMP (Linux, Apache, MariaDB, PHP).</p>
+                <p class="mb-2 text-center">Déploiement d'un environnement LAMP (Linux, Apache, MariaDB, PHP).</p>
                 <p class="text-purple-400 hover:underline text-center">
                     <a href="#" onclick="openModal('modal-lamp'); return false;"> >Plus de détails</a>
                 </p>
@@ -218,7 +274,7 @@
 
             <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Organisation d'un travail d'équipe</h3>
-                <p class="mb-2 text-center">Projet d’évènement culturel et création de site web.</p>
+                <p class="mb-2 text-center">Projet d'évènement culturel et création de site web.</p>
                 <p class="text-purple-400 hover:underline text-center">
                     <a href="#" onclick="openModal('modal-team'); return false;"> >Plus de détails</a>
                 </p>
@@ -226,22 +282,22 @@
 
             <div class="bg-gray-800 p-4 rounded neon-hover relative">
                 <h3 class="text-lg font-semibold mb-2 text-center">Recueil de besoin</h3>
-                <p class="mb-2 text-center">Analyse, persona et prototypage d’un site web.</p>
+                <p class="mb-2 text-center">Analyse, persona et prototypage d'un site web.</p>
                 <p class="text-purple-400 hover:underline text-center">
                     <a href="#" onclick="openModal('modal-recueil'); return false;"> >Plus de détails</a>
                 </p>
             </div>
 
             <div class="bg-gray-800 p-4 rounded neon-hover relative">
-                <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 1</h3>
-                <p class="mb-2 text-center">Création d’une application de gestion de jeux de société.</p>
+                <h3 class="text-lg font-semibold mb-2 text-center">Développement d'une application Partie 1</h3>
+                <p class="mb-2 text-center">Création d'une application de gestion de jeux de société.</p>
                 <p class="text-purple-400 hover:underline text-center">
                     <a href="#" onclick="openModal('modal-app'); return false;"> >Plus de détails</a>
                 </p>
             </div>
 
             <div class="bg-gray-800 p-4 rounded neon-hover relative">
-                <h3 class="text-lg font-semibold mb-2 text-center">Développement d’une application Partie 2</h3>
+                <h3 class="text-lg font-semibold mb-2 text-center">Développement d'une application Partie 2</h3>
                 <p class="mb-2 text-center">Optimisation, ajout de fonctionnalités et modification du design de la v1.</p>
                 <p class="text-purple-400 hover:underline text-center">
                     <a href="#" onclick="openModal('modal-app2'); return false;"> >Plus de détails</a>
@@ -257,7 +313,7 @@
                     <button onclick="closeModal('modal-calculatrice')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Calculatrice en Java</h3>
                     <p class="mb-4">
-                    Projet en binôme réalisé en Java, visant à développer une calculatrice capable d’effectuer des opérations simples sur des entiers.
+                    Projet en binôme réalisé en Java, visant à développer une calculatrice capable d'effectuer des opérations simples sur des entiers.
                     <br><br>
                     Le projet a été découpé en deux phases : une première pour la version basique avec UML, et une seconde avec la gestion d'expressions plus complexes grâce à une classe dédiée.
                     </p>
@@ -272,16 +328,16 @@
                     <button onclick="closeModal('modal-lamp')" class="absolute top-2 right-3 text-gray-300 hover:text-purple-400 text-2xl font-bold">&times;</button>
                     <h3 class="text-2xl font-bold mb-4 border-b border-purple-500 pb-2">Installation de services réseau</h3>
                     <p class="mb-4 text-sm leading-relaxed">
-                    Au cours de ce projet, j'ai mis en place un environnement LAMP (Linux, Apache, MariaDB, PHP) pour comprendre la gestion et la configuration d’un serveur web.<br><br>
+                    Au cours de ce projet, j'ai mis en place un environnement LAMP (Linux, Apache, MariaDB, PHP) pour comprendre la gestion et la configuration d'un serveur web.<br><br>
 
                     <strong class="text-purple-400">Installation et Configuration :</strong><br>
-                    J’ai installé Apache pour servir des pages web, MariaDB pour la gestion de bases de données, et PHP pour l'exécution de scripts côté serveur. J’ai appris à configurer Apache pour qu’il puisse correctement intégrer PHP et MariaDB.<br><br>
+                    J'ai installé Apache pour servir des pages web, MariaDB pour la gestion de bases de données, et PHP pour l'exécution de scripts côté serveur. J'ai appris à configurer Apache pour qu'il puisse correctement intégrer PHP et MariaDB.<br><br>
 
                     <strong class="text-purple-400">Autonomie et Pratique :</strong><br>
-                    Le travail en autonomie m’a permis de développer des compétences pratiques sur la résolution de problèmes techniques liés aux installations, configurations et commandes systèmes.<br><br>
+                    Le travail en autonomie m'a permis de développer des compétences pratiques sur la résolution de problèmes techniques liés aux installations, configurations et commandes systèmes.<br><br>
 
                     <strong class="text-purple-400">Sécurité et Maintenance :</strong><br>
-                    J’ai abordé les bonnes pratiques de sécurité pour les serveurs, notamment la configuration sécurisée de phpMyAdmin et la gestion des mises à jour pour maintenir la stabilité de l’environnement LAMP.
+                    J'ai abordé les bonnes pratiques de sécurité pour les serveurs, notamment la configuration sécurisée de phpMyAdmin et la gestion des mises à jour pour maintenir la stabilité de l'environnement LAMP.
                     </p>
                 </div>
             </div>
@@ -294,7 +350,7 @@
                     Ce projet avait pour objectif de nous faire travailler en équipe sur un événement culturel réel. Nous avons choisi le concours d'élégance automobile d'Enghien, auquel nous avons assisté pour recueillir des données terrain : interviews des organisateurs, sondages auprès des visiteurs, photos, etc. </br> Il s'agit de notre premier site réalisé au cours de la première année de BUT.<br><br>
 
                     <strong class="text-purple-400">Objectif :</strong><br>
-                    Imaginer et organiser une future édition de l’évènement : création du programme, des supports de communication, et d’un site web dédié.<br><br>
+                    Imaginer et organiser une future édition de l'évènement : création du programme, des supports de communication, et d'un site web dédié.<br><br>
 
                     <strong class="text-purple-400">Compétences mobilisées :</strong><br>
                     • Gestion de projet (diagramme de Gantt, matrice RACI)<br>
@@ -316,7 +372,7 @@
                     <div class="text-sm leading-relaxed space-y-4">
                     <p><strong class="text-purple-400">Projet individuel</strong> comprenant recueil d'informations, analyse des besoins et création de prototype.</p>
 
-                    <p><strong class="text-purple-400">Phase I : Analyse et Construction d’Expertise</strong><br>
+                    <p><strong class="text-purple-400">Phase I : Analyse et Construction d'Expertise</strong><br>
                     • Récupération des besoins dans un tableau<br>
                     • Préparation de 3 questions pour affiner les attentes client<br>
                     • Étude de benchmarking avec proposition d'amélioration<br>
@@ -332,7 +388,7 @@
                     • Diagramme de navigation des actions utilisateurs</p>
 
                     <p><strong class="text-purple-400">Phase III : Prototype final</strong><br>
-                    • Présentation d’un prototype interactif<br>
+                    • Présentation d'un prototype interactif<br>
                     • Justification du choix des pages et de la navigation<br>
                     • Développement sur outil collaboratif ou export ZIP</p>
                     </div>
@@ -346,12 +402,12 @@
 
                     <div class="text-sm leading-relaxed space-y-4">
                     <p><strong class="text-purple-400">Contexte :</strong><br>
-                    L’Université Sorbonne Paris Nord possède une collection de plus de 17 000 jeux de société. Ce projet avait pour but de concevoir une application web pour gérer et valoriser cette collection.</p>
+                    L'Université Sorbonne Paris Nord possède une collection de plus de 17 000 jeux de société. Ce projet avait pour but de concevoir une application web pour gérer et valoriser cette collection.</p>
 
                     <p><strong class="text-purple-400">Fonctionnalités principales :</strong><br>
-                    • Nettoyage automatisé des données à l’aide de scripts Python<br>
-                    • Création et gestion d’une base de données relationnelle MySQL<br>
-                    • Interface web MVC avec recherche, prêt de jeux et gestion d’inventaire<br>
+                    • Nettoyage automatisé des données à l'aide de scripts Python<br>
+                    • Création et gestion d'une base de données relationnelle MySQL<br>
+                    • Interface web MVC avec recherche, prêt de jeux et gestion d'inventaire<br>
                     • Intégration de scripts PHP et HTML pour une application dynamique</p>
 
                     <p><strong class="text-purple-400">Technologies utilisées :</strong><br>
@@ -376,14 +432,14 @@
 
                     <div class="text-sm leading-relaxed space-y-4">
                     <p><strong class="text-purple-400">Contexte :</strong><br>
-                   Après une première phase consacrée à la conception de l’application web, à la mise en place d’une base de données relationnelle MySQL et au développement des fonctionnalités de base, cette deuxième phase vise à finaliser et enrichir les fonctionnalités principales pour offrir une expérience utilisateur complète et fluide.</p>
+                   Après une première phase consacrée à la conception de l'application web, à la mise en place d'une base de données relationnelle MySQL et au développement des fonctionnalités de base, cette deuxième phase vise à finaliser et enrichir les fonctionnalités principales pour offrir une expérience utilisateur complète et fluide.</p>
 
                     <p><strong class="text-purple-400">Objectifs de cette deuxième phase :</strong><br>
-                    • Mise en place complète des opérations d’ajout, de suppression et de modification des jeux ainsi que des utilisateurs, afin de garantir une gestion précise et dynamique de la collection<br>
+                    • Mise en place complète des opérations d'ajout, de suppression et de modification des jeux ainsi que des utilisateurs, afin de garantir une gestion précise et dynamique de la collection<br>
                     • Suivi rigoureux des prêts des jeux de société, incluant la localisation physique des exemplaires pour faciliter leur suivi et retour.<br>
-                    • Implémentation d’un système d’historique pour tracer toutes les modifications effectuées sur les jeux et les utilisateurs, assurant ainsi la transparence et la traçabilité des actions.<br>
-                    • Ajout d’une fonctionnalité permettant d’exporter facilement les données, pour une utilisation externe, des analyses ou des rapports.<br>
-                    • Optimisation de l’interface utilisateur avec un design plus moderne, intégration d’images, amélioration de la fluidité et de la réactivité de l’application pour offrir une expérience utilisateur agréable et intuitive.
+                    • Implémentation d'un système d'historique pour tracer toutes les modifications effectuées sur les jeux et les utilisateurs, assurant ainsi la transparence et la traçabilité des actions.<br>
+                    • Ajout d'une fonctionnalité permettant d'exporter facilement les données, pour une utilisation externe, des analyses ou des rapports.<br>
+                    • Optimisation de l'interface utilisateur avec un design plus moderne, intégration d'images, amélioration de la fluidité et de la réactivité de l'application pour offrir une expérience utilisateur agréable et intuitive.
                     </p>
 
                     <p><strong class="text-purple-400">Technologies utilisées :</strong><br>
@@ -402,20 +458,67 @@
             </div>
         </section>
 
+        <!-- Section Expériences professionnelles -->
+        <section id="experiences" class="mb-20 p-8">
+            <h2 class="text-4xl font-bold mb-8 text-center">Expériences professionnelles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+                <!-- Carte Stage -->
+                <div class="bg-gray-800 neon-hover p-6 rounded-lg shadow-lg flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-3">💼</span>
+                            <h3 class="text-2xl font-semibold">Stage Développeur Logiciel/Application</h3>
+                        </div>
+                        <p class="text-lg text mb-2">Entreprise : <span class="text-purple-400 font-semibold">Ipasys</span></p>
+                        <p class="text-lg text mb-2">Durée : <span class="text-purple-400 font-semibold">2 mois</span> (2025)</p>
+                        <p class="text text-base mb-4">Missions : Développement d'un site web, participation à la conception, maintenance et amélioration de fonctionnalités, découverte du monde professionnel.</p>
+                    </div>
+                    <!-- Bouton détails (optionnel) -->
+                    <!-- <button class="btn-neon mt-4 w-fit">En savoir plus</button> -->
+                </div>
+                <!-- Carte Alternance à venir -->
+                <div class="bg-gray-800 neon-hover p-6 rounded-lg shadow-lg flex flex-col justify-between relative opacity-70 cursor-not-allowed border-dashed border-2 border-purple-400">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-3">⏳</span>
+                            <h3 class="text-2xl font-semibold">Alternance (à venir)</h3>
+                        </div>
+                        <p class="text-lg text mb-2">Entreprise : <span class="text-purple-400 font-semibold">Ipasys</span></p>
+                        <p class="text-lg text mb-2">Durée : <span class="text-purple-400 font-semibold">2025-2026</span></p>
+                        <p class="text text-base mb-4">Bientôt en alternance pour continuer à progresser techniquement et professionnellement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="bg-gray-900 text-gray-400 py-6 mt-20">
             <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-sm">&copy; 2025 Jules Richardot. Tous droits réservés.</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#home" class="hover:text-white transition duration-300">Accueil</a>
                     <a href="#skills" class="hover:text-white transition duration-300">Compétences</a>
                     <a href="#projects" class="hover:text-white transition duration-300">Projets</a>
-                    <a href="https://www.linkedin.com/in/jules-richardot-147957298/" class="hover:text-white transition duration-300 text-purple-400">LinkedIn</a>
+                    <a href="#experiences" class="hover:text-white transition duration-300">Expériences</a>
                 </div>
             </div>
         </footer>
 
     </div>
     <script>
+    // Loading Screen
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        
+        // Disparition plus rapide
+        setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        }, 800);
+    });
+
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
