@@ -65,8 +65,9 @@ html {
 }
 
 .comp {
-  width: 500px;
-  height: 297px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
   border: 2px solid rgb(133, 76, 230);
   box-shadow:
     0 0 4px rgba(133, 76, 230, 0.4),
@@ -258,3 +259,28 @@ html {
   .animate-progress-bar {
     animation: progress-bar 2s ease-in-out forwards;
   }
+
+@media (max-width: 768px) {
+  .comp {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 1rem !important;
+  }
+  .carte {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .modal > div {
+    max-width: 95vw !important;
+    max-height: 90vh !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+  }
+  .modal h3 {
+    font-size: 1.2rem !important;
+    word-break: break-word;
+  }
+}
