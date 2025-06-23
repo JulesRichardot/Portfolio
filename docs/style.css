@@ -1,5 +1,6 @@
-html {
-  scroll-behavior: smooth;
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
 }
 
 :root{
@@ -274,10 +275,12 @@ html {
     padding: 0.5rem 0.75rem;
   }
   .modal > div {
-    max-width: 95vw !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
     max-height: 90vh !important;
     padding: 1rem !important;
     overflow-y: auto !important;
+    box-sizing: border-box !important;
   }
   .modal h3 {
     font-size: 1.2rem !important;
