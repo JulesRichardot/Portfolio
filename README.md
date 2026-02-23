@@ -22,8 +22,8 @@ Ce projet est un portfolio personnel développé en HTML, CSS et TailwindCSS, av
 /docs
   index.html     → Page principale
   style.css      → Styles additionnels
+  /others    → autres (EX : cv)
 /img       → Logos, photos, visuels
-/others    → autres
 ```
 
 ## 📸 Aperçu
